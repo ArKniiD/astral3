@@ -1,0 +1,11 @@
+    <main class="container-fluid">
+        <section>
+            <h1>Commands</h1>
+            <label for="bloom">
+                <input type="checkbox" id="bloom" name="bloom" role="switch" [value]="bloom" (click)="onToogleBloom()">
+                Enable/disable bloom
+            </label>
+        </section> 
+        <app-main-scene [toggleBloom$]="toggleBloom.asObservable()"></app-main-scene>
+    </main>
+    
